@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>
+    Registrate 
+    </title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <script>
+      addEventListener(
+        "load",
+        function () {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+   
+    <link
+      href="css/popuo-box.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    
+    <link rel="stylesheet" href="popuo-box.css">
+    <link href="style1.css" rel="stylesheet" type="text/css" media="all" />
+
+    
+  </head>
+  <body>
+    <h1 class="header-ed">
+       Registrate 
+    </h1>
+
+    <div class="art-bothside">
+      <div class="mid-cls">
+        <div class="art-right-ed">
+          <h2> Registrate o Inicia Sesion</h2>
+          <p>
+            Registrate o inicia sesion para aprovechar todos nuestros descuentos y aprovechar las ventajas con las que contamos
+          </p>
+
+          <form action="index.html" method="post">
+
+            <div class="main">
+              <div class="form-left-to-em">
+                <input type="text" name="name" placeholder="Nombre" required="" />
+              </div>
+              <div class="form-right-ed">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Correo"
+                  required=""
+                />
+              </div>
+            </div>
+
+            <div class="main">
+              <div class="form-left-to-em">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Contraseña"
+                  id="password"
+                  required=""
+                />
+                <div class="clear"></div>
+              </div>
+              <div class="form-right-ed">
+                <input
+                  type="password"
+                  placeholder="Confirmar Contraseña"
+                  id="confirm_password"
+                  required=""
+                />
+              </div>
+            </div>
+
+            <div class="btnn">
+              <button type="submit">Registrate</button>
+            </div>
+          </form>
+
+
+
+          <div class="banner-agileits-btm">
+
+            <div class="emayouts_more-buttn">
+              <h3>
+                Ya tienes cuenta...?
+                <a href="#small-dialog1 " 
+                class="play-icon popup-with-zoom-anim"
+                  >Inicia Sesion</a
+                >
+              </h3>
+            </div>
+
+            <div id="small-dialog1" class="mfp-hide ed_small_dialog wthree_pop">
+              <div class="agileits_modal_body">
+           
+                <div class="letter-ed">
+                  <form action="index.html" method="post">
+                    <div class="form-left-to-em">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Nombre"
+                        required=""
+                      />
+                    </div>
+                    <div class="form-right-ed">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Correo"
+                        required=""
+                      />
+                    </div>
+                    <div class="form-right-ed">
+                      <input
+                        type="password"
+                        name="password"
+                        placeholder="Contraseña"
+                        required=""
+                      />
+                    </div>
+                    <div class="btnn">
+                      <button type="submit">Inicia Sesion</button><br />
+                    </div>
+                  </form>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="art-left-ed">
+          <img src="img/one.jpeg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      
+    </div>
+    
+    <script>
+      var password = document.getElementById("password"),
+        confirm_password = document.getElementById("confirm_password");
+
+      function validatePassword() {
+        if (password.value != confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+          confirm_password.setCustomValidity("");
+        }
+      }
+
+      password.onchange = validatePassword;
+      confirm_password.onkeyup = validatePassword;
+    </script>
+  
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.js"></script>
+   
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+          fixedContentPos: false,
+          fixedBgPos: true,
+          overflowY: "auto",
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
+    </script>
+    
+  </body>
+</html>
